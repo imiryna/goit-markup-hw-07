@@ -360,7 +360,7 @@ body {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/bg-img/bg_dsctp@1x.webp);
+      url(../images/bg-img/people-office\ 1bg-d@1x.webp);
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -371,7 +371,7 @@ body {
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url(../images/bg-img/bg_dsctp@2x.webp);
+        url(../images/bg-img/people-office\ 1bg-d@2x.webp);
     }
   }
 }
