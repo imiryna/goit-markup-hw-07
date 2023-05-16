@@ -129,9 +129,14 @@ body {
   text-transform: uppercase;
   color: var(--color-iris);
   /* position */
-  margin-right: 76px;
 }
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
+/* @media only screen and (min-width: 1200px) {
+  .nav-link {
+    margin-right: 76px;
+  }
+} */
+
+@media only screen and (min-width: 768px) {
   .nav-link {
     margin-right: 100px;
   }
@@ -162,7 +167,7 @@ body {
 .contact-list {
   display: none;
 }
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 768px) {
   .contact-list {
     display: flex;
     flex-direction: column;
@@ -888,9 +893,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-iris);
-  display: inline-block;
   margin-bottom: 16px;
-  vertical-align: middle;
 }
 
 @media only screen and (max-width: 767px) {
@@ -963,13 +966,16 @@ body {
 
 .form-container {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
   gap: 16px;
 }
-@media only screen and (min-width: 428px) and (max-width: 767px) {
+@media only screen and (min-width: 767px) {
   .form-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
     align-items: center;
     justify-content: flex-start;
   }
@@ -983,9 +989,9 @@ body {
 
 .form {
   display: block;
-  width: 100%;
-  /* min-width: 320px;
-  height: 40px; */
+  /* width: 100%; */
+  width: 320px;
+  height: 40px;
   padding: 8px 16px;
 
   border: 1px solid var(--color-white);
@@ -995,7 +1001,7 @@ body {
   font-size: 14px;
   outline: none;
 }
-@media only screen and (min-width: 480px) and (max-width: 767px) {
+@media only screen and (min-width: 408px) and (max-width: 767px) {
   .form {
     width: 398px;
   }
@@ -1161,7 +1167,7 @@ body {
   line-height: 1.6;
   letter-spacing: 0.04em;
   color: var(--color-light-slate);
-
+  display: block;
   margin-bottom: 4px;
 }
 .contact-form-box {
@@ -1250,7 +1256,6 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
   gap: 8px;
   margin-bottom: 24px;
 }
@@ -1283,12 +1288,12 @@ body {
   height: 8px;
 
   position: absolute;
-  top: 5px;
-  left: 13px;
+  top: 4px;
+  left: 3px;
 
   transition: fill var(--transition-duration) var(--transition-timing-function);
 }
-@media only screen and (max-width: 428px) {
+@media only screen and (max-width: 408px) {
   .contact-form-agreement-icon {
     top: 10px;
     left: 2px;
@@ -1338,13 +1343,15 @@ body {
   transition: color var(--transition-duration) var(--transition-timing-function),
     background-color var(--transition-duration)
       var(--transition-timing-function),
-    box-shadow var(--transition-duration) var(--transition-timing-function);
+    box-shadow var(--transition-duration) var(--transition-timing-function),
+    border-color var(--transition-duration) var(--transition-timing-function);
 }
 
 .btn-iris:hover,
 .btn-iris:focus {
   color: var(--color-white);
   background-color: var(--color-ocean);
+  border-color: var(--color-ocean);
   border: 1px solid transparent;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -1363,12 +1370,10 @@ body {
 
 .row-list {
   display: flex;
-  width: 1128px;
   flex-wrap: wrap;
   gap: var(--indent);
   row-gap: 48px;
   column-gap: 24px;
-  padding-bottom: 120px;
 }
 
 .row-list-item {

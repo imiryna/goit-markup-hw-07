@@ -359,16 +359,22 @@
         </div>
         <form class="input">
           <p class="media-title">Subscribe</p>
-          <label class="form-box">
-            <input class="form" type="email" name="email" required />
-            <span class="form-text">E-mail</span>
-          </label>
-          <button class="btn-dark button" type="submit">
-            <span class="subscribe">Subscribe</span>
-            <svg class="btn-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-frame"></use>
-            </svg>
-          </button>
+          <div class="form-container">
+            <label class="form-box">
+              <input
+                class="form"
+                type="email"
+                name="email"
+                required
+                placeholder="E-mail" />
+            </label>
+            <button class="btn-dark button" type="submit">
+              Subscribe
+              <svg class="btn-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-frame"></use>
+              </svg>
+            </button>
+          </div>
         </form>
       </div>
     </footer>
